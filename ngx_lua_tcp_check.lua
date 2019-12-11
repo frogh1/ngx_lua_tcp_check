@@ -37,7 +37,7 @@ if not data then
     return
 end
 
-ngx.log(ngx.ERR,"data is:",data,"len:",string.len(data),"xxx:",bin2hex(data))
+ngx.log(ngx.ERR,"len:",string.len(data),"data:",bin2hex(data))
 
 
 t = string.byte(string.sub(data,8,8))
